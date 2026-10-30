@@ -1,0 +1,15 @@
+{
+  "window": 2,
+  "target": "clicks",
+  "candidate": "rf_30",
+  "train_n": 336027,
+  "n": 98304,
+  "mae_pp": 3.7605838938236538,
+  "rmse_pp": 9.727901434805784,
+  "bias_pp": 0.1653220504122908,
+  "weighted_mae_pp": 1.4586710404070966,
+  "company_macro_mae_pp": 4.1080065078105745,
+  "fit_seconds": 68.87775839993265,
+  "predict_seconds": 0.16854910005349666,
+  "peak_process_rss_mb": 726.40234375
+}

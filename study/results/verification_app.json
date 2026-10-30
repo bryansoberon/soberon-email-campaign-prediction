@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date": "2026-10-24",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 2.3226963999914005,
+  "scope": "Integración local con datos reales; no validación externa ni de usabilidad con participantes",
+  "checks": [
+    "Reproducción de predicción reservada",
+    "Importación y equivalencia de predicción",
+    "Referencia con empresa nueva",
+    "Entradas inválidas",
+    "Importación inválida preserva estado",
+    "Exportación íntegra",
+    "Protección de operaciones locales",
+    "Vistas y evidencia archivada",
+    "Persistencia tras reinicio y asociación de respuestas",
+    "Cambio de mensaje no hereda respuesta ajena"
+  ]
+}

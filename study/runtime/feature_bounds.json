@@ -1,0 +1,50 @@
+{
+  "message_content_size": {
+    "min": 0.0,
+    "max": 522855.0
+  },
+  "message_images_count": {
+    "min": 0.0,
+    "max": 223.0
+  },
+  "message_embedded_images_count": {
+    "min": 0.0,
+    "max": 68.0
+  },
+  "message_embedded_images_size": {
+    "min": 0.0,
+    "max": 789105.0
+  },
+  "message_embedded_files_count": {
+    "min": 0.0,
+    "max": 10.0
+  },
+  "message_embedded_files_size": {
+    "min": 0.0,
+    "max": 4206042.0
+  },
+  "message_links_count": {
+    "min": 0.0,
+    "max": 1655.0
+  },
+  "message_personalization_tags_count": {
+    "min": 0.0,
+    "max": 670.0
+  },
+  "message_personalization_tags_in_sender_email_count": {
+    "min": 0.0,
+    "max": 1.0
+  },
+  "message_personalization_tags_in_subject_count": {
+    "min": 0.0,
+    "max": 5.0
+  },
+  "message_personalization_tags_in_html_body_count": {
+    "min": 0.0,
+    "max": 670.0
+  },
+  "message_personalization_tags_in_text_body_count": {
+    "min": 0.0,
+    "max": 20.0
+  }
+}

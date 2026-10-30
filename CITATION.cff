@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this reproducibility package and the SendGuard900K source dataset when reusing these materials. The associated manuscript is not yet published."
+type: software
+title: "Email Campaign Prediction — Soberón: application, method and reviewer package"
+version: 1.0.4-review
+repository-code: "https://github.com/bryansoberon/soberon-email-campaign-prediction"
+authors:
+  - family-names: Soberón-Quintana
+    given-names: Bernabe B.
+  - family-names: Muro-Nuñez
+    given-names: Efraín A.
+  - family-names: Tuesta-Monteza
+    given-names: Victor A.
+abstract: "Code, protocol, frozen models, archived predictions, numerical verification, article figures and isolated source-data reproduction for the manuscript Development of a Machine Learning-Based Method for Predicting Key Metrics in Digital Marketing Campaigns."

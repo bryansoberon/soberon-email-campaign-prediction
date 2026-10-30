@@ -1,0 +1,13 @@
+{
+  "stage": "development_in_progress_before_test",
+  "date": "2026-10-24",
+  "files": {
+    "experiment/core.py": "7b843b6a7f86e14086905c36762db52e539c8a2d226c3bbc9c37e682e75dbef0",
+    "experiment/prepare.py": "a2b29cbf812198927bb5a113ad1913d41580a54965776276ed294b0feaa778d2",
+    "experiment/models.py": "1710bc0eb49c2e7947c4be63478bdfc87244161a74a9536ff87bf0b4997b51a4",
+    "experiment/develop.py": "9c6fc9c05f171b4ff6773ba8b6c6534f471d5f5863269ecd4a73063f236ccc6d",
+    "experiment/evaluate.py": "a25738f31f73ad28025ff56b755d1368624f7f36abcb9239d829836a6081efa6",
+    "05_plan/PROTOCOLO_EXPERIMENTAL_V1.md": "a8e660b474de861bf5c8322c34310a7b6d3e0fe54e43569f7d39239408dcd797",
+    "requirements-lock.txt": "3f94ca721db1c663e6d6a15008f94972335d520cd4bf2271bfc83b7302ca8df8"
+  }
+}

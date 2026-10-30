@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "date": "2026-10-24",
+  "browser": "Chromium / Playwright",
+  "screenshots": [
+    {
+      "file": "01_resumen.png",
+      "title": "Resumen del historial real",
+      "sha256": "57a624f98eafad89627b261da42ceb919a45745af8a087a45c881bcacb8aa735"
+    },
+    {
+      "file": "02_historial.png",
+      "title": "Historial por empresa",
+      "sha256": "44ff8c7e87bc8f252549183bd707ff336a4517f171922192ae11fb16c335c953"
+    },
+    {
+      "file": "03_entradas.png",
+      "title": "Datos previos al envío",
+      "sha256": "16d6e14dee9f989db80ae1a9c1b372506228198db35a7f895e2d1b45d3d46fd6"
+    },
+    {
+      "file": "04_estimacion.png",
+      "title": "Estimación reproducida y exportable",
+      "sha256": "044e6640f8a29033f6589f0e7aa16c991102ed3711071b6ac55f008390a25126"
+    },
+    {
+      "file": "05_comparacion.png",
+      "title": "Predicciones y respuestas reservadas",
+      "sha256": "620eeae3b787159194d353fed5e09162367487e87f24becb8ee9eb7c4e618e59"
+    },
+    {
+      "file": "06_evaluacion.png",
+      "title": "Evaluación temporal y alcance",
+      "sha256": "a54db6c4401390e0040ca1f4681f4fd52c7c19d8830998cbc7e2fd6e1d8735b1"
+    },
+    {
+      "file": "07_importacion.png",
+      "title": "Importación funcional del CSV real",
+      "sha256": "11eb0c770c49810447b29a84d47db462d8a3389bede0022936a852fd8a8af724"
+    },
+    {
+      "file": "08_movil.png",
+      "title": "Vista adaptable a pantalla móvil",
+      "sha256": "84c65ae8b8d26a8f3dddac4edd0a0edbeb3e2c76b718fd924a8f421c5421fdc8"
+    }
+  ],
+  "javascript_errors": [],
+  "http_errors": [],
+  "checks": [
+    "Cinco vistas",
+    "Estimación real",
+    "Descarga JSON",
+    "Importación CSV real",
+    "Restauración",
+    "Sin desborde móvil"
+  ],
+  "scope": "Verificación funcional automatizada, no estudio de usabilidad con usuarios"
+}

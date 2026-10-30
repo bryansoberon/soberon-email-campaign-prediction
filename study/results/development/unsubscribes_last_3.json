@@ -1,0 +1,12 @@
+{
+  "window": 3,
+  "target": "unsubscribes",
+  "candidate": "last",
+  "train_n": 432581,
+  "n": 110719,
+  "mae_pp": 0.46720332791992036,
+  "rmse_pp": 3.8991782367722556,
+  "bias_pp": -0.006188258271103414,
+  "weighted_mae_pp": 0.18629844940973542,
+  "company_macro_mae_pp": 0.41361997841170794
+}

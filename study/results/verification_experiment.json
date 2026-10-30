@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": [
+    "frozen_execution_source_hashes",
+    "protocol_and_selection_hashes",
+    "unique_partition_ids",
+    "test_calendar",
+    "five_mature_campaigns",
+    "finite_predictions_in_support",
+    "model_hashes",
+    "recomputed_metrics"
+  ],
+  "primary_test_campaigns": 275535
+}

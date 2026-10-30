@@ -1,0 +1,15 @@
+{
+  "window": 2,
+  "target": "clicks",
+  "candidate": "lgbm_15",
+  "train_n": 336027,
+  "n": 98304,
+  "mae_pp": 3.2368903303011662,
+  "rmse_pp": 11.048205330206128,
+  "bias_pp": -2.2261520514080213,
+  "weighted_mae_pp": 0.6090137126573798,
+  "company_macro_mae_pp": 3.3005606219012704,
+  "fit_seconds": 4.202969899983145,
+  "predict_seconds": 0.30468269996345043,
+  "peak_process_rss_mb": 683.70703125
+}

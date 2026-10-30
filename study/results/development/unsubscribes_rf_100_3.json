@@ -1,0 +1,15 @@
+{
+  "window": 3,
+  "target": "unsubscribes",
+  "candidate": "rf_100",
+  "train_n": 432581,
+  "n": 110719,
+  "mae_pp": 0.48002503158029297,
+  "rmse_pp": 2.8068131094636413,
+  "bias_pp": 0.07014117654394966,
+  "weighted_mae_pp": 0.12634809788168885,
+  "company_macro_mae_pp": 0.41269788919636224,
+  "fit_seconds": 99.86002060002647,
+  "predict_seconds": 0.15859799995087087,
+  "peak_process_rss_mb": 772.640625
+}

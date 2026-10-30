@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-28T16:20:44.304724+00:00",
+  "version": "1.0.4-review",
+  "associated_manuscript": "Development of a Machine Learning-Based Method for Predicting Key Metrics in Digital Marketing Campaigns (submitted manuscript)",
+  "article_sha256": "ddb7ab775446d60bc2c865d161d354fecd0c1c7da8482bb5020c0ba4cd9077ca",
+  "source_s1_sha256": "b150aa7e54a07896f9d74f69ba4d4b063022a9139260402c71d605986e62a043",
+  "source_s1_members": 140,
+  "s1_members_preserved_byte_for_byte": true,
+  "submitted_s1_sha256": "1d9ecd5c7c7a0755d04234f15133673ae57645bc000e48792753fd49a617538a",
+  "submitted_s1_differences": [
+    "article_figures/ contains the exact manuscript figures",
+    "README.md section describing the article figures",
+    "MANIFEST_SHA256.json updated for those files"
+  ],
+  "plotting_source_sha256": "1a057e051d38ef6490573ee82b9d76497709fc4061b3606b8add9ef0e913aac6",
+  "unchanged_plotting_functions": [
+    "sha",
+    "label",
+    "arrow",
+    "icon",
+    "box",
+    "article_flow",
+    "paired",
+    "monthly",
+    "grouped"
+  ],
+  "presentation_adaptation": {
+    "font_preferences": [
+      "Arial",
+      "Liberation Sans",
+      "DejaVu Sans"
+    ],
+    "save_margin_checks": "Strict with Arial; warnings recorded with alternative fonts; numerical checks unchanged."
+  },
+  "reference_figures": [
+    {
+      "figure": 1,
+      "file": "reference_figures/figure01.png",
+      "sha256": "7a827855f9dd1e82adf575f9c0effb7ea146718e6cecf3274c4ccd048d7d36bb",
+      "article_member": "word/media/image1.png"
+    },
+    {
+      "figure": 2,
+      "file": "reference_figures/figure02.png",
+      "sha256": "0e9b00bbc968992c66036b38a702956e24743d841779c6840e9674f25a505dd5",
+      "article_member": "word/media/paired_mae_revision.png"
+    },
+    {
+      "figure": 3,
+      "file": "reference_figures/figure03.png",
+      "sha256": "da2bdfa8a102a1d11b044bb16465afde028df749de8d0b9d26f1ce8a538dad46",
+      "article_member": "word/media/image2.png"
+    },
+    {
+      "figure": 4,
+      "file": "reference_figures/figure04.png",
+      "sha256": "ec2e54501f896bd04777b9ff8277e9fe3186e30db5248cf969b2a6c6d0e897c0",
+      "article_member": "word/media/image3.png"
+    },
+    {
+      "figure": 5,
+      "file": "reference_figures/figure05.png",
+      "sha256": "d0db0f2eade747fd2d9cdbb79b8a65041ac56de446717b97fd1dba425cc2ded1",
+      "article_member": "word/media/image4.png"
+    }
+  ],
+  "data_doi": "10.5281/zenodo.17985618",
+  "source_csv_sha256": "4e83e286426ca43d0a5a0f4bb6157b83fc1ad0ae90751b8891a5822ae6eb3956",
+  "software_license_assigned": false
+}

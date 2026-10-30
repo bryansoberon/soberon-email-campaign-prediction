@@ -1,0 +1,15 @@
+{
+  "window": 3,
+  "target": "unsubscribes",
+  "candidate": "ridge_100",
+  "train_n": 432581,
+  "n": 110719,
+  "mae_pp": 0.47525140969824325,
+  "rmse_pp": 2.8540271521282197,
+  "bias_pp": 0.04298421334063908,
+  "weighted_mae_pp": 0.10572250912504938,
+  "company_macro_mae_pp": 0.45650447278723244,
+  "fit_seconds": 0.3267170999897644,
+  "predict_seconds": 0.03544889995828271,
+  "peak_process_rss_mb": 777.67578125
+}

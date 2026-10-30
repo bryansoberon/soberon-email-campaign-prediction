@@ -1,0 +1,12 @@
+{
+  "window": 2,
+  "target": "clicks",
+  "candidate": "last5_median",
+  "train_n": 336027,
+  "n": 98304,
+  "mae_pp": 3.528765301678161,
+  "rmse_pp": 11.52632844604673,
+  "bias_pp": -1.369450517561481,
+  "weighted_mae_pp": 1.5505526245230814,
+  "company_macro_mae_pp": 3.508370185228825
+}

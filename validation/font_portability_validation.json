@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-10-28T16:22:44.992474+00:00",
+  "status": "VERIFICATION_PASS",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.2",
+  "started_utc": "2026-10-28T16:13:32.929806+00:00",
+  "finished_utc": "2026-10-28T16:14:00.715188+00:00",
+  "font_used": "DejaVu Sans",
+  "strict_layout": false,
+  "layout_warnings": [
+    "('01_flujo_articulo', 'en', 'A. Development and temporal evaluation', (np.float64(0.11320312500000002), np.float64(9.142777777777779), np.float64(4.596796875000001), np.float64(9.337222222222222)), (0.23, 9.08, 4.48, 9.42))"
+  ],
+  "numeric_checks": 538,
+  "bootstrap_intervals_recomputed": 8,
+  "existing_tests_passed": 17,
+  "article_figures_generated": 4,
+  "model_fitting": false,
+  "actual_linux_execution": false,
+  "test_condition": "Explicit alternative font on Windows; numerical and original scientific files unchanged"
+}

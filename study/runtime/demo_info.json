@@ -1,0 +1,8 @@
+{
+  "source": "SendGuard900K v1.0.0",
+  "real_records": true,
+  "selection_rule": "12 companies closest to 100 development campaigns, between 60 and 200; ties by opaque ID; no error-based selection",
+  "rows": 1758,
+  "companies": 12,
+  "default_campaign": "5882558"
+}

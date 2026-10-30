@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Laboratorio de campañas</title><link rel="stylesheet" href="/static/style.css"><script src="/static/i18n.js" defer></script><script src="/static/app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+ <a class="brand" href="#resumen"><span class="brand-icon">↗</span><span>Laboratorio<br><strong>de campañas</strong></span></a>
+ <div class="nav-label">ESPACIO DE TRABAJO</div>
+ <nav aria-label="Navegación principal">
+  <button data-view="resumen" class="nav active"><span>▦</span> Resumen</button>
+  <button data-view="historial" class="nav"><span>≡</span> Historial</button>
+  <button data-view="estimar" class="nav"><span>↗</span> Estimar campaña</button>
+  <button data-view="comparar" class="nav"><span>⇄</span> Comparar resultados</button>
+  <button data-view="evaluacion" class="nav"><span>◈</span> Evaluación</button>
+ </nav>
+ <div class="sidebar-bottom"><span class="online-dot"></span> Entorno local<div>Campañas de correo electrónico<br>Horizonte de respuesta: 72 horas</div></div>
+</aside>
+<main>
+ <header class="topbar"><div><span class="eyebrow">PREDICCIÓN DE MÉTRICAS</span><span id="section-name">Resumen</span></div><span class="source-badge" id="source">Cargando datos…</span></header>
+ <div class="notice" id="notice" role="status" hidden></div>
+ <section id="resumen" class="view">
+  <div class="page-heading"><div><p class="eyebrow">DE LOS DATOS A UNA ESTIMACIÓN</p><h1>Una campaña, más contexto.</h1><p>Consulta el historial y estima clics y bajas antes del envío.</p></div><button class="primary" data-go="estimar">Estimar una campaña <span>↗</span></button></div>
+  <div class="cards" id="summary-cards"></div>
+  <div class="grid-two"><article class="panel chart-panel"><div class="panel-heading"><div><h2>Respuesta en el tiempo</h2><p>Tasa media de clics por campaña · archivo cargado</p></div><span class="tag">72 h</span></div><div id="history-chart" class="chart" aria-label="Evolución temporal de clics"></div></article>
+  <article class="panel"><p class="eyebrow">COMENZAR</p><h2>Tu historial de campañas</h2><p>Trabaja con la demostración real o carga un CSV que cumpla las mismas definiciones.</p><div class="upload-box"><label for="csv-file" class="file-label">Seleccionar archivo CSV</label><input id="csv-file" class="visually-hidden" type="file" accept=".csv"><span id="csv-filename" class="small muted">Ningún archivo seleccionado</span><p>Una fila por campaña. Fechas con zona horaria y respuestas acumuladas a 72 horas.</p></div><button id="import-button" class="primary full">Validar e importar</button><div class="link-row"><a href="/download/template.csv">Plantilla CSV</a><a href="/download/example.csv">Ejemplo real</a><button id="demo-button" class="text-button">Restaurar demo</button></div><div id="import-result"></div></article></div>
+  <article class="panel scope-strip"><div class="scope-icon">i</div><div><h3>Un contrato de datos, un alcance claro</h3><p>Este sistema estima tasas de correo electrónico. La evaluación corresponde a SendGuard. Un archivo de otra plataforma necesita equivalencias verificadas y evaluación propia.</p></div><button class="secondary" data-go="evaluacion">Ver evidencia</button></article>
+ </section>
+ <section id="historial" class="view" hidden>
+  <div class="page-heading"><div><p class="eyebrow">REGISTROS DISPONIBLES</p><h1>Historial de campañas</h1><p>Clics únicos y bajas registrados dentro de las primeras 72 horas.</p></div></div>
+  <article class="panel"><div class="filters"><label>Empresa emisora<select id="history-client"></select></label><span id="history-count" class="muted"></span></div><div class="table-wrap"><table><thead><tr><th>Campaña</th><th>Envío · UTC</th><th>Correos enviados</th><th>Clics únicos</th><th>Bajas</th></tr></thead><tbody id="history-rows"></tbody></table></div></article>
+ </section>
+ <section id="estimar" class="view" hidden>
+  <div class="page-heading"><div><p class="eyebrow">ANTES DEL ENVÍO</p><h1>Estimar una campaña</h1><p>El historial se corta en la fecha indicada. Solo entran respuestas con 72 horas completas.</p></div><button class="secondary" id="example-button">Cargar ejemplo</button></div>
+  <div class="grid-predict"><article class="panel"><form id="predict-form"><div class="panel-heading"><h2>Datos de la campaña</h2><span class="tag">Entradas previas</span></div><p id="example-context" class="small muted"></p><div class="form-grid"><label>Empresa emisora<input id="predict-client" list="clients-list" required autocomplete="off"><datalist id="clients-list"></datalist></label><label>Fecha e instante de envío · UTC<input id="predict-when" type="datetime-local" step="1" required></label></div><label>Identificador de la campaña<input id="predict-campaign" required autocomplete="off" placeholder="Identificador único para asociar su resultado"></label><div id="message-fields" class="form-grid"></div><details><summary>Características adicionales del mensaje</summary><div id="advanced-fields" class="form-grid"></div></details><p class="small muted">Completa las propiedades del mensaje; un valor desconocido no equivale a cero. No se solicitan resultados de la campaña nueva.</p><button type="submit" class="primary full" id="predict-button">Calcular estimación <span>↗</span></button></form></article>
+  <article class="panel result-panel"><p class="eyebrow">PRÓXIMAS 72 HORAS</p><h2>Estimación de respuesta</h2><div id="prediction-result"><div class="empty-state"><span>↗</span><h3>Una estimación con historia</h3><p>Completa los datos para consultar ambas tasas y el historial disponible.</p></div></div></article></div>
+ </section>
+ <section id="comparar" class="view" hidden>
+  <div class="page-heading"><div><p class="eyebrow">REPRODUCCIÓN HISTÓRICA</p><h1>Estimación y resultado observado</h1><p>Consulta tus estimaciones guardadas y los casos reales del experimento.</p></div><span class="tag">Test reservado</span></div>
+  <article class="panel"><h2>Estimaciones guardadas</h2><p>El historial cargado permite asociar una respuesta por empresa, campaña, fecha y propiedades del mensaje. La fecha de registro distingue reproducciones históricas de estimaciones anteriores al envío.</p><div class="table-wrap"><table><thead><tr><th>Campaña / uso</th><th>Registro UTC</th><th>Clics estimados</th><th>Clics observados</th><th>Bajas estimadas</th><th>Bajas observadas</th><th>Estado</th></tr></thead><tbody id="saved-rows"></tbody></table></div><p id="saved-count" class="small muted"></p></article>
+  <article class="panel archived-panel"><h2>Casos del experimento reservado</h2><p class="small muted">Casos de empresas seleccionadas por cantidad de campañas de desarrollo, sin escoger por el error. Cada tasa se expresa en porcentaje.</p><div class="table-wrap"><table><thead><tr><th>Campaña / empresa</th><th>Fecha UTC</th><th>Clics estimados</th><th>Clics observados</th><th>Bajas estimadas</th><th>Bajas observadas</th></tr></thead><tbody id="comparison-rows"></tbody></table></div><p id="comparison-count" class="small muted"></p></article>
+ </section>
+ <section id="evaluacion" class="view" hidden>
+  <div class="page-heading"><div><p class="eyebrow">EVIDENCIA DEL MÉTODO</p><h1>Evaluación temporal</h1><p>Desarrollo en 2022–2023. Prueba posterior en 2024, sin reajustar el método con sus resultados.</p></div><span class="tag">Modelos congelados</span></div>
+  <div id="evaluation-cards" class="cards"></div>
+  <article class="panel"><div class="panel-heading"><div><h2>Error frente a referencias históricas</h2><p>Menor MAE significa menor error absoluto medio por campaña.</p></div></div><div class="table-wrap"><table><thead><tr><th>Métrica</th><th>MAE del método</th><th>MAE de referencia</th><th>Reducción del error</th><th>Sesgo medio</th></tr></thead><tbody id="evaluation-rows"></tbody></table></div><p class="small muted">Unidades: puntos porcentuales. La reducción es de error; no representa exactitud ni aumento de clics.</p></article>
+  <div class="grid-two"><article class="panel"><h2>Estabilidad por mes</h2><img class="figure" src="/figures/02_estabilidad_mensual.png" alt="Error de ambas tasas por mes en 2024"><a href="/figures/02_estabilidad_mensual.svg" download>Descargar figura SVG</a></article><article class="panel"><h2>Qué permite concluir</h2><div id="evaluation-findings"></div><h3>Uso de las estimaciones</h3><p>Son estimaciones centrales orientadas al error absoluto. El método tiende a subestimar tasas altas; no transforma las tasas en cantidades esperadas ni promete ganancias comerciales.</p><p>Las respuestas corresponden al registro de la plataforma. La transferencia a otra empresa o proveedor necesita evaluación adicional.</p><p class="small muted">Modelo <span id="model-version"></span> · <a href="https://zenodo.org/records/17985618" target="_blank" rel="noopener">Fuente: SendGuard900K</a></p></article></div>
+ </section>
+ <footer>Proyecto de investigación · Ingeniería de Sistemas <span>Datos reales, alcance verificable.</span></footer>
+</main>
+</body></html>

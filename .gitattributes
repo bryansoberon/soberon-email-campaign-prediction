@@ -1,0 +1,4 @@
+* -text
+**/* -text
+study/** -whitespace
+reference_figures/*.svg -whitespace

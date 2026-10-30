@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "device_scale_factor": 2,
+  "desktop_viewport_css_pixels": [
+    1440,
+    1040
+  ],
+  "languages": [
+    {
+      "language": "es",
+      "screenshots": [
+        {
+          "file": "01_resumen.png",
+          "sha256": "d6ff6e1f1d693784ab49c06cac98f485b4e39b94ed16ea210e24c7c9e6ae19de"
+        },
+        {
+          "file": "02_historial.png",
+          "sha256": "5381a51fd990efd9ac02f2788a4cdd3a63c71abeb0ed8a8589e51d7d0b91b9d3"
+        },
+        {
+          "file": "03_entradas.png",
+          "sha256": "85b450b964a497bdfb538c7af2a06444657d23a682fac7bb16b1f206b59bcf26"
+        },
+        {
+          "file": "04_estimacion.png",
+          "sha256": "63b3fad16213a0f2009fd602037cee7a6c42c6158a7c706dd98ca33e6aae8994"
+        },
+        {
+          "file": "05_comparacion.png",
+          "sha256": "c3efdac2d423925096a8f3cf06128ca6f94ff932eba416376c30d182b4bee8c3"
+        },
+        {
+          "file": "06_evaluacion.png",
+          "sha256": "7feec297188a562852a29727a021f7617db0ffec7fb2a3c536254c6534dec3d9"
+        },
+        {
+          "file": "07_importacion.png",
+          "sha256": "3e3c0cb38a8e028c7945489c78b53bb6eb530cfabfc2fefdcafa2d7563c82762"
+        },
+        {
+          "file": "08_movil.png",
+          "sha256": "8c80c828e921b8f9b5cfc5cede5d6fab4b9845e26a3e2452d4d3fe1721661e5c"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "screenshots": [
+        {
+          "file": "01_resumen.png",
+          "sha256": "bd2624319b210cf657d09ca291bd592ca2ffae8c3bceb27f84999855eac93300"
+        },
+        {
+          "file": "02_historial.png",
+          "sha256": "e78c186fc9747ec53e8ba5f6b33cac9fe67bc7a263cf9732fb202caba240ed8d"
+        },
+        {
+          "file": "03_entradas.png",
+          "sha256": "ed9802b379c527ca633a1a23bff1dbd5113883ee11bc0ea64334a53adb53f200"
+        },
+        {
+          "file": "04_estimacion.png",
+          "sha256": "d0db0f2eade747fd2d9cdbb79b8a65041ac56de446717b97fd1dba425cc2ded1"
+        },
+        {
+          "file": "05_comparacion.png",
+          "sha256": "c02fae0b858adf6b34ee1a8ac109a18df7d505d536adba2abbfc397e7af3c86f"
+        },
+        {
+          "file": "06_evaluacion.png",
+          "sha256": "58e388a66a7313eb3831e5c1983e8d95a5660ceafd69cc8c48e3ba4888a7899b"
+        },
+        {
+          "file": "07_importacion.png",
+          "sha256": "2fe4944e6d4f2c0118420802c2c5b9e540788fc2aec06438e24806afa06ed90c"
+        },
+        {
+          "file": "08_movil.png",
+          "sha256": "20c4a2db2866b94d8131e9ab736adb0077946d70667b116c1552ae1f7188b0fe"
+        }
+      ]
+    }
+  ],
+  "predictions_identical": true,
+  "inference_rates": {
+    "clicks": 0.8805038545073808,
+    "unsubscribes": 0.04993006483943994
+  },
+  "javascript_http_errors": [],
+  "checks": [
+    "real import",
+    "real inference",
+    "JSON download",
+    "five views",
+    "fallback",
+    "mobile overflow",
+    "locale invariant rates"
+  ],
+  "workspace": "isolated temporary workspace; user history unchanged",
+  "scope": "presentation and functional verification; no retraining or new predictive validation"
+}

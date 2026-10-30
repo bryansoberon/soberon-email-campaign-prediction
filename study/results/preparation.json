@@ -1,0 +1,105 @@
+{
+  "source_sha256": "4e83e286426ca43d0a5a0f4bb6157b83fc1ad0ae90751b8891a5822ae6eb3956",
+  "protocol_sha256": "a8e660b474de861bf5c8322c34310a7b6d3e0fe54e43569f7d39239408dcd797",
+  "flow": [
+    {
+      "step": "archivo",
+      "rows": 908229,
+      "excluded": 0
+    },
+    {
+      "step": "ids_y_fecha_validos",
+      "rows": 908229,
+      "excluded": 0
+    },
+    {
+      "step": "id_no_repetido",
+      "rows": 908225,
+      "excluded": 4
+    },
+    {
+      "step": "sin_pruebas_ab_optimizer",
+      "rows": 886466,
+      "excluded": 21759
+    },
+    {
+      "step": "envios_positivos",
+      "rows": 848301,
+      "excluded": 38165
+    },
+    {
+      "step": "respuestas_validas",
+      "rows": 848301,
+      "excluded": 0
+    },
+    {
+      "step": "atributos_validos",
+      "rows": 848301,
+      "excluded": 0
+    },
+    {
+      "step": "ventana_final_72h",
+      "rows": 847458,
+      "excluded": 843
+    }
+  ],
+  "cohorts": [
+    {
+      "split": "development",
+      "eligible_primary": false,
+      "campaigns": 22199,
+      "companies": 3882
+    },
+    {
+      "split": "development",
+      "eligible_primary": true,
+      "campaigns": 548109,
+      "companies": 3439
+    },
+    {
+      "split": "test",
+      "eligible_primary": false,
+      "campaigns": 1615,
+      "companies": 418
+    },
+    {
+      "split": "test",
+      "eligible_primary": true,
+      "campaigns": 275535,
+      "companies": 3528
+    }
+  ],
+  "feature_columns": [
+    "message_content_size",
+    "message_images_count",
+    "message_embedded_images_count",
+    "message_embedded_images_size",
+    "message_embedded_files_count",
+    "message_embedded_files_size",
+    "message_links_count",
+    "message_personalization_tags_count",
+    "message_personalization_tags_in_sender_email_count",
+    "message_personalization_tags_in_subject_count",
+    "message_personalization_tags_in_html_body_count",
+    "message_personalization_tags_in_text_body_count",
+    "history_n",
+    "history_days_since_last",
+    "history_mean_sent",
+    "history_clicks_mean",
+    "history_clicks_weighted",
+    "history_clicks_last",
+    "history_clicks_last5_mean",
+    "history_clicks_last5_median",
+    "history_unsubscribes_mean",
+    "history_unsubscribes_weighted",
+    "history_unsubscribes_last",
+    "history_unsubscribes_last5_mean",
+    "history_unsubscribes_last5_median"
+  ],
+  "horizon_hours": 72,
+  "history_rule": "prior_send + 72h < query_send",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.2",
+  "logical_cpus": 12,
+  "memory_gb": 13.855525970458984
+}

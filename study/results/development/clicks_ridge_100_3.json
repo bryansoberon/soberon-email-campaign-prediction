@@ -1,0 +1,15 @@
+{
+  "window": 3,
+  "target": "clicks",
+  "candidate": "ridge_100",
+  "train_n": 432581,
+  "n": 110719,
+  "mae_pp": 4.386236559649286,
+  "rmse_pp": 10.294793762603526,
+  "bias_pp": 0.5191006277013199,
+  "weighted_mae_pp": 2.2147384237678227,
+  "company_macro_mae_pp": 4.704726763878057,
+  "fit_seconds": 0.3352216000203043,
+  "predict_seconds": 0.036874999990686774,
+  "peak_process_rss_mb": 770.61328125
+}

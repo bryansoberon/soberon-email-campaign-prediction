@@ -1,0 +1,209 @@
+{
+  "selection_sha256": "8b584c8a15891a3f321bf0ea573160bac6023894c4fedabfefeee13ad36dfa11",
+  "protocol_sha256": "a8e660b474de861bf5c8322c34310a7b6d3e0fe54e43569f7d39239408dcd797",
+  "period": [
+    "2024-01-01",
+    "2024-12-29 exclusive"
+  ],
+  "primary_n": 275535,
+  "primary_companies": 3528,
+  "limited_history_n": 1615,
+  "targets": {
+    "clicks": {
+      "ml": "lgbm_15",
+      "reference": "last5_median",
+      "product": "lgbm_15",
+      "metrics": {
+        "full": {
+          "n": 275535,
+          "mae_pp": 3.0198414372937896,
+          "rmse_pp": 10.363794380074884,
+          "bias_pp": -2.064488371687606,
+          "weighted_mae_pp": 0.5318079806838986,
+          "company_macro_mae_pp": 3.0443930258379965
+        },
+        "history": {
+          "n": 275535,
+          "mae_pp": 3.054070826374574,
+          "rmse_pp": 10.410267112319115,
+          "bias_pp": -2.069343452824983,
+          "weighted_mae_pp": 0.5414021697238361,
+          "company_macro_mae_pp": 3.097272078423494
+        },
+        "reference": {
+          "n": 275535,
+          "mae_pp": 3.3331196437437023,
+          "rmse_pp": 10.936970529338122,
+          "bias_pp": -1.1572483851348274,
+          "weighted_mae_pp": 1.1053248800986477,
+          "company_macro_mae_pp": 3.2977347361206997
+        },
+        "product": {
+          "n": 275535,
+          "mae_pp": 3.0198414372937896,
+          "rmse_pp": 10.363794380074884,
+          "bias_pp": -2.064488371687606,
+          "weighted_mae_pp": 0.5318079806838986,
+          "company_macro_mae_pp": 3.0443930258379965
+        }
+      },
+      "comparison": {
+        "difference_mae_pp": -0.31327820644991267,
+        "ci_level": 0.975,
+        "lower_pp": -0.5258106117034458,
+        "upper_pp": -0.15505182710449095,
+        "block_weeks": 4,
+        "repeats": 2000,
+        "companies": 3528,
+        "calendar_weeks": 52,
+        "method": "company resampling x circular moving calendar blocks; percentile"
+      },
+      "block_sensitivity": [
+        {
+          "difference_mae_pp": -0.31327820644991267,
+          "ci_level": 0.975,
+          "lower_pp": -0.5548461867992934,
+          "upper_pp": -0.1536782803237756,
+          "block_weeks": 2,
+          "repeats": 1000,
+          "companies": 3528,
+          "calendar_weeks": 52,
+          "method": "company resampling x circular moving calendar blocks; percentile"
+        },
+        {
+          "difference_mae_pp": -0.31327820644991267,
+          "ci_level": 0.975,
+          "lower_pp": -0.5286179767539806,
+          "upper_pp": -0.15021729978921627,
+          "block_weeks": 8,
+          "repeats": 1000,
+          "companies": 3528,
+          "calendar_weeks": 52,
+          "method": "company resampling x circular moving calendar blocks; percentile"
+        }
+      ],
+      "message_ablation": {
+        "difference_mae_pp": -0.03422938908078402,
+        "ci_level": 0.975,
+        "lower_pp": -0.050527511284683246,
+        "upper_pp": -0.019406845402665237,
+        "block_weeks": 4,
+        "repeats": 2000,
+        "companies": 3528,
+        "calendar_weeks": 52,
+        "method": "company resampling x circular moving calendar blocks; percentile"
+      },
+      "limited_history_global_median": {
+        "n": 1615,
+        "mae_pp": 5.488624181265891,
+        "rmse_pp": 15.07736296773876,
+        "bias_pp": -5.1510504721507075,
+        "weighted_mae_pp": 0.8938258649276739,
+        "company_macro_mae_pp": 4.760854843577842
+      },
+      "relative_mae_reduction_pct": 9.39894873074655
+    },
+    "unsubscribes": {
+      "ml": "lgbm_31",
+      "reference": "global_median",
+      "product": "lgbm_31",
+      "metrics": {
+        "full": {
+          "n": 275535,
+          "mae_pp": 0.289881173339137,
+          "rmse_pp": 3.4673646439971026,
+          "bias_pp": -0.27120154650363143,
+          "weighted_mae_pp": 0.040520725787128335,
+          "company_macro_mae_pp": 0.3401578991319407
+        },
+        "history": {
+          "n": 275535,
+          "mae_pp": 0.290212380963555,
+          "rmse_pp": 3.4667396024223334,
+          "bias_pp": -0.2721590236937194,
+          "weighted_mae_pp": 0.04107571848995472,
+          "company_macro_mae_pp": 0.34068393095984834
+        },
+        "reference": {
+          "n": 275535,
+          "mae_pp": 0.3041481156197725,
+          "rmse_pp": 3.4731225343043657,
+          "bias_pp": -0.3041481156197725,
+          "weighted_mae_pp": 0.06492620772007915,
+          "company_macro_mae_pp": 0.38603217390795763
+        },
+        "product": {
+          "n": 275535,
+          "mae_pp": 0.289881173339137,
+          "rmse_pp": 3.4673646439971026,
+          "bias_pp": -0.27120154650363143,
+          "weighted_mae_pp": 0.040520725787128335,
+          "company_macro_mae_pp": 0.3401578991319407
+        }
+      },
+      "comparison": {
+        "difference_mae_pp": -0.014266942280635568,
+        "ci_level": 0.975,
+        "lower_pp": -0.017793612245401255,
+        "upper_pp": -0.011353915417803215,
+        "block_weeks": 4,
+        "repeats": 2000,
+        "companies": 3528,
+        "calendar_weeks": 52,
+        "method": "company resampling x circular moving calendar blocks; percentile"
+      },
+      "block_sensitivity": [
+        {
+          "difference_mae_pp": -0.014266942280635568,
+          "ci_level": 0.975,
+          "lower_pp": -0.017331881235681836,
+          "upper_pp": -0.011241808891655727,
+          "block_weeks": 2,
+          "repeats": 1000,
+          "companies": 3528,
+          "calendar_weeks": 52,
+          "method": "company resampling x circular moving calendar blocks; percentile"
+        },
+        {
+          "difference_mae_pp": -0.014266942280635568,
+          "ci_level": 0.975,
+          "lower_pp": -0.01768896203921862,
+          "upper_pp": -0.011135000874984919,
+          "block_weeks": 8,
+          "repeats": 1000,
+          "companies": 3528,
+          "calendar_weeks": 52,
+          "method": "company resampling x circular moving calendar blocks; percentile"
+        }
+      ],
+      "message_ablation": {
+        "difference_mae_pp": -0.00033120762441803624,
+        "ci_level": 0.975,
+        "lower_pp": -0.0010235657041870498,
+        "upper_pp": -1.7418519128489333e-05,
+        "block_weeks": 4,
+        "repeats": 2000,
+        "companies": 3528,
+        "calendar_weeks": 52,
+        "method": "company resampling x circular moving calendar blocks; percentile"
+      },
+      "limited_history_global_median": {
+        "n": 1615,
+        "mae_pp": 1.2169212562298057,
+        "rmse_pp": 7.684373283374281,
+        "bias_pp": -1.2169212562298057,
+        "weighted_mae_pp": 0.2610082835259365,
+        "company_macro_mae_pp": 1.0710816219754014
+      },
+      "relative_mae_reduction_pct": 4.690787661650742
+    }
+  },
+  "interpretation": "observational temporal prediction; no external or causal validation",
+  "prediction_seconds": {
+    "clicks_full": 1.0383591999998316,
+    "clicks_history": 0.8150598000502214,
+    "unsubscribes_full": 1.011160199996084,
+    "unsubscribes_history": 1.0771841999376193
+  },
+  "joint_hypothesis_supported": true
+}
