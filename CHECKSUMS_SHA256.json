@@ -4,8 +4,8 @@
   "CITATION.cff": "8dcf2c6b360591132d1508e3e4d3f1ad63fb552ad9dd1bf5306d64adafdf8951",
   "docs/APPLICATION_USER_GUIDE.md": "3f0cc3db28e1757271e3a761091ffc31c0f1c325d8620527d54f7273f2fcd922",
   "docs/METHOD_AND_PROTOCOL_EN.md": "c344e5cc091bdc7f821937f998c00d1b811c731c8a95d63ae91dfb79850c1e7e",
-  "PROVENANCE.json": "57eb7903b8cbb76c25778122156a65f5b93025273dc0a620f5bf61fdd6d6436e",
-  "README.md": "9f63e003628f537b0dc9d4c4e85309a685d030255f47367b0e47ea1803b1eb50",
+  "PROVENANCE.json": "3fcaac00c9bef610d57d1f536d983f0da98149e231e97ca073c3029ab97433a9",
+  "README.md": "9545fbd95be43bdddc58797cee203a6e6eb3c05cad7b88806ecec91fe24f6328",
   "reference_figures/figure01.pdf": "ecb2e20db850e35c3e01a2343a0bb8da0e881253806bc1015ee4a35d815cfcf6",
   "reference_figures/figure01.png": "7a827855f9dd1e82adf575f9c0effb7ea146718e6cecf3274c4ccd048d7d36bb",
   "reference_figures/figure01.svg": "fee8cb6b6557297a6e343e6ca5ec8bc2f853ffb60b5c50563f6396237521b682",
@@ -168,5 +168,6 @@
   "validation/font_portability_validation.json": "2590fcb4cbf1fd92732b153fd53c3b556d785abe127b0485ae2f1a4c7b020f27",
   "validation/preparation_validation.json": "b53b365fd743ebb3c8881f920aa0f3cb8a57819698a3625dcb3aa359e55b26eb",
   "validation/saved_results_verification.json": "1f92ecea13b6fe66748d3013db2d7832974e35f851428cadf85a4cc541714584",
-  "VALIDATION.md": "11cc195a4d6ec6f31fa28032840cf38bdfa8588ebc9d298cec6fd050b46791af"
+  "VALIDATION.md": "11cc195a4d6ec6f31fa28032840cf38bdfa8588ebc9d298cec6fd050b46791af",
+  "S1_Reproducibility_Soberon.zip": "1d9ecd5c7c7a0755d04234f15133673ae57645bc000e48792753fd49a617538a"
 }

@@ -6,6 +6,20 @@ This repository contains the complete local application and scientific method fo
 
 Start with the [application manual](docs/APPLICATION_USER_GUIDE.md), [method and experimental protocol in English](docs/METHOD_AND_PROTOCOL_EN.md), or the reviewer commands below. The application has an English interface at `http://127.0.0.1:8765/?lang=en`. Original frozen source files, identifiers, API routes and protocol evidence remain unchanged; some historical comments and terminal messages are in Spanish.
 
+## Submitted supplementary file
+
+**[Download S1_Reproducibility_Soberon.zip](https://github.com/bryansoberon/soberon-email-campaign-prediction/raw/refs/heads/main/S1_Reproducibility_Soberon.zip)** — the supplementary archive identified by the corresponding author as submitted to Applied Sciences on 30 October 2026 with manuscript `applsci-4697740` (V14).
+
+The archive is provided unchanged: **143 files**, including its manifest with **142 SHA-256 entries**. It contains the frozen method, application, models, predictions, results and the updated manuscript figures. Its SHA-256 is:
+
+```text
+1d9ecd5c7c7a0755d04234f15133673ae57645bc000e48792753fd49a617538a
+```
+
+For the submitted figures, use `article_figures/` inside this ZIP or [reference_figures/](reference_figures/) in this repository; all 13 figure files match byte for byte. The repository's `study/article_figures/` retains the figures from the original archived package. The 128 scientific and application files outside the figures, README and manifest are identical between the submitted ZIP and `study/`.
+
+The GitHub **Code → Download ZIP** command downloads this entire repository, including the manuals and additional reviewer tools. Use the link above to obtain the submitted S1 archive itself. The repository integrity command below also checks that archive's SHA-256.
+
 ## Reviewer routes
 
 | Route | What it does | Original CSV needed? | Fits models? |

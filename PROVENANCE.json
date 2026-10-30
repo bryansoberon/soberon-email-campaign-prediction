@@ -66,5 +66,9 @@
   ],
   "data_doi": "10.5281/zenodo.17985618",
   "source_csv_sha256": "4e83e286426ca43d0a5a0f4bb6157b83fc1ad0ae90751b8891a5822ae6eb3956",
-  "software_license_assigned": false
+  "software_license_assigned": false,
+  "submitted_s1_file": "S1_Reproducibility_Soberon.zip",
+  "submitted_s1_members": 143,
+  "submitted_s1_manifest_entries": 142,
+  "submitted_s1_identification": "Identified by the corresponding author as the archive submitted on 2026-10-30 with applsci-4697740; added byte for byte."
 }
