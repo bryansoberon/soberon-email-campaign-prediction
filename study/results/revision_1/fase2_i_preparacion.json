@@ -1,0 +1,11 @@
+{
+  "development_campaigns": 570308,
+  "missing_counts": 0,
+  "negative_counts": 0,
+  "counts_above_sent": 0,
+  "non_monotone_24_48_72": 0,
+  "eligible_at_24h_min5": 549713,
+  "eligible_at_48h_min5": 548815,
+  "rebuilt_72h_equals_campaigns_parquet": true,
+  "eligible_at_72h_min5": 548109
+}

@@ -1,0 +1,46 @@
+{
+  "preparation": {
+    "development_campaigns": 570308,
+    "missing_counts": 0,
+    "negative_counts": 0,
+    "counts_above_sent": 0,
+    "non_monotone_24_48_72": 0,
+    "eligible_at_24h_min5": 549713,
+    "eligible_at_48h_min5": 548815,
+    "rebuilt_72h_equals_campaigns_parquet": true,
+    "eligible_at_72h_min5": 548109
+  },
+  "reproduction_of_results_development": {
+    "model_72h_min5_vs_results_development_max_abs_diff": 0.0,
+    "baselines_72h_min5_vs_results_development_max_abs_diff": 0.0
+  },
+  "frozen_and_development_unchanged": true,
+  "scenarios": [
+    [
+      24,
+      5
+    ],
+    [
+      48,
+      5
+    ],
+    [
+      72,
+      3
+    ],
+    [
+      72,
+      5
+    ],
+    [
+      72,
+      10
+    ]
+  ],
+  "environment": {
+    "python": "3.14.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "platform": "Windows-11-10.0.26300-SP0"
+  }
+}

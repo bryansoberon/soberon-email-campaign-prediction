@@ -1,0 +1,144 @@
+{
+  "scope": "Round-1 phase 1: diagnostics from saved 2024 predictions; no fitting, selection or threshold tuning on 2024.",
+  "interval_method": "experiment.evaluate.interval resampling: companies x circular 4-week blocks, 2,000 replicates, 1.25/98.75 percentiles (nominal 97.5%), seed 20261024+4; ratios keep each row numerator/denominator.",
+  "final_training_n": 546759,
+  "test_n": 275535,
+  "test_companies": 3528,
+  "unsubscribe_thresholds_training_pp": {
+    "P90": 0.23998193111236615,
+    "P95": 0.5149347694434271
+  },
+  "group_edges": {
+    "company_size_history_mean_sent": [
+      398.67546620046625,
+      826.5325489439676,
+      1832.4804712041864,
+      7013.817295355401
+    ],
+    "campaign_volume_sent": [
+      42.0,
+      359.0,
+      1272.0,
+      5312.0
+    ],
+    "observed_rate_band_clicks": {
+      "P50": 0.5967604433077579,
+      "P75": 2.6666666666666665,
+      "P90": 9.30232558139535,
+      "P95": 23.076923076923077,
+      "P99": 66.66666666666667
+    },
+    "historical_rate_level_clicks": [
+      0.5448506453034759,
+      1.7412427141654894,
+      3.103334388424818,
+      6.623836759064704
+    ],
+    "observed_rate_band_unsubscribes": {
+      "P75": 0.05858230814294083,
+      "P90": 0.23998193111236615,
+      "P95": 0.5149347694434271,
+      "P99": 2.857142857142857
+    },
+    "historical_rate_level_unsubscribes": [
+      0.02518071701630349,
+      0.053835816965009206,
+      0.13072013985967837,
+      0.39922633363491533
+    ]
+  },
+  "calibration_summary": {
+    "clicks": {
+      "groups": 10,
+      "obs_mean_minus_pred_mean_pp": 2.064488371687606,
+      "ols_slope_obs_on_pred": 1.247110934149941,
+      "ols_intercept_pp": 1.6412778495239748,
+      "share_obs_at_or_below_pred": 0.5526956647975756,
+      "reference_share_obs_at_or_below_pred": 0.5694267515923567
+    },
+    "unsubscribes": {
+      "groups": 7,
+      "obs_mean_minus_pred_mean_pp": 0.27120154650363143,
+      "ols_slope_obs_on_pred": 2.962636834645012,
+      "ols_intercept_pp": 0.2065393963811401,
+      "share_obs_at_or_below_pred": 0.6373310105794182,
+      "reference_share_obs_at_or_below_pred": 0.5440942167056817
+    }
+  },
+  "development_participation": {
+    "definition": "test companies without rows in the 546,759-campaign final fitting set",
+    "seen_companies": 3155,
+    "unseen_companies": 373,
+    "unseen_campaigns": 12907,
+    "unseen_with_campaigns_before_2024": 217,
+    "unseen_first_campaign_in_2024": 156,
+    "unseen_with_eligible_development_rows_unmatured_at_final_origin": 5,
+    "participation_in_development_windows": [
+      {
+        "origin": "2023-01-01",
+        "unseen_in_fit": 0,
+        "unseen_in_validation": 0
+      },
+      {
+        "origin": "2023-05-01",
+        "unseen_in_fit": 0,
+        "unseen_in_validation": 0
+      },
+      {
+        "origin": "2023-09-01",
+        "unseen_in_fit": 0,
+        "unseen_in_validation": 0
+      }
+    ]
+  },
+  "published_interval_reproduction": {
+    "clicks": {
+      "published": [
+        -0.5258106117034458,
+        -0.15505182710449095
+      ],
+      "evaluate_interval": [
+        -0.5258106117034458,
+        -0.15505182710449095
+      ],
+      "ratio_interval": [
+        -0.5258106117034458,
+        -0.15505182710449095
+      ]
+    },
+    "unsubscribes": {
+      "published": [
+        -0.017793612245401255,
+        -0.011353915417803215
+      ],
+      "evaluate_interval": [
+        -0.017793612245401255,
+        -0.011353915417803215
+      ],
+      "ratio_interval": [
+        -0.017793612245401255,
+        -0.011353915417803215
+      ]
+    }
+  },
+  "frozen_sha256_before": {
+    "artifacts/models/clicks_full.joblib": "7de80d2659a1677bd55fcbc69401de9bf5e8b51650d35e0e0b51764fc014d52b",
+    "artifacts/models/clicks_history.joblib": "a9e63d8a3e1add595096d0f2744d4b8677bfa341e9c49f7d9fccb07fe530e9f5",
+    "artifacts/models/unsubscribes_full.joblib": "0ac91c6c70afe41041d70f807202d577b35e7ab28d72831ca0e9279682fd86eb",
+    "artifacts/models/unsubscribes_history.joblib": "4dac8ac2e5d96e1701982c76502d5cf3f65a02f1f5c2522911301c3e922d3a35",
+    "results/selection.json": "8b584c8a15891a3f321bf0ea573160bac6023894c4fedabfefeee13ad36dfa11",
+    "results/final_evaluation.json": "90cd67e433a6d97b18733ad45be3fd1699d6397fa08781ac8f9295c74bfe5fbc",
+    "results/monthly_test.csv": "263402db9f62e5bbc93368f8361a217dbd375b8024a91a3b640085b56ac334b2",
+    "data/processed/campaigns.parquet": "a2be534225e898f598ac9c5dcea782b0df16bb36e3be23a41cf815f7caab4bd0",
+    "data/processed/partition_manifest.parquet": "e094fafa8c5bf7fbc935bc7c97a3a82308c71c42a4377c1667451db79a5022c7",
+    "data/processed/test_predictions.parquet": "8deb4093879e6ac54161ccee185f66337de56ae85a8f746fe17d670d7d69ae34"
+  },
+  "frozen_sha256_unchanged_after": true,
+  "environment": {
+    "python": "3.14.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "runtime_seconds": 26.031116500031203
+}

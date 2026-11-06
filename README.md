@@ -20,6 +20,12 @@ For the submitted figures, use `article_figures/` inside this ZIP or [reference_
 
 The GitHub **Code → Download ZIP** command downloads this entire repository, including the manuals and additional reviewer tools. Use the link above to obtain the submitted S1 archive itself. The repository integrity command below also checks that archive's SHA-256.
 
+## First-round revision analyses
+
+The analyses added for the first round of review are in [`study/experiment/revision_1/`](study/experiment/revision_1/README.md) (code) and [`study/results/revision_1/`](study/results/revision_1/README.md) (aggregate outputs). They support Sections 2.8, 3.7 and 3.8, Tables 8–13 and Supplementary Tables S1–S7 of the revised manuscript. These folders are not part of Supplementary File S1 and change no archived file: the 140 original S1 files, the frozen models, the selection and the 2024 evaluation are unchanged, and `study/MANIFEST_SHA256.json` still covers only the original S1 files. The integrity command checks the added files through `CHECKSUMS_SHA256.json`.
+
+The diagnostics on the reserved 2024 test use the saved predictions without refitting. The sensitivity analyses refit models only on the 2022–2023 development data, and none of those models was evaluated on 2024.
+
 ## Reviewer routes
 
 | Route | What it does | Original CSV needed? | Fits models? |
@@ -108,8 +114,10 @@ Open http://127.0.0.1:8765/?lang=en for the **English interface**. Stop the loca
 | Figure 3: monthly MAE | `results/monthly_test.csv`; archived predictions | Independent monthly checks and rendered plot |
 | Figure 4: prediction-group diagnostic | `results/figures_tesis/diagnostic_groups.csv`; archived predictions | Recomputed group means/counts and rendered plot |
 | Figure 5: local application | `app/`, public `runtime/` demo and archived English screenshots | `reference_figures/figure05.png`; local application |
+| Revised manuscript, Section 3.7; Tables 8–9 and S1–S4 | `experiment/revision_1/fase1_diagnosticos.py`; `results/revision_1/fase1_*` | Archived aggregate outputs; commands in `experiment/revision_1/README.md` |
+| Revised manuscript, Section 3.8; Tables 10–13 and S5–S7 | `experiment/revision_1/fase2_*.py`; `results/revision_1/fase2_*` | Archived aggregate outputs (development data only); commands in `experiment/revision_1/README.md` |
 
-Paths in the evidence column are relative to `study/` unless prefixed `tools/`. `reference_figures/figure01`–`figure05` contain the actual images embedded in the submitted manuscript. The PNG bytes are checked against that document by the package builder; Figures 1–4 also include their original vector files. The older `study/article_figures/` are preserved S1 history. Use `reference_figures/` and the new plotting tool for the current article.
+Paths in the evidence column are relative to `study/` unless prefixed `tools/`. `reference_figures/figure01`–`figure05` contain the actual images embedded in the originally submitted manuscript (V14). The PNG bytes are checked against that document by the package builder; Figures 1–4 also include their original vector files. The older `study/article_figures/` are preserved S1 history. Use `reference_figures/` and the new plotting tool for the originally submitted article. The revised manuscript regenerates Figures 2–4 from the same saved results, adds the observed medians to Figure 4 and recaptures Figure 5 from the same historical example; no reported value changes.
 
 ## Expected recorded results and scope
 

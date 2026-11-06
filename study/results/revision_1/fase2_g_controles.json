@@ -1,0 +1,47 @@
+{
+  "reproduction_of_results_development": {
+    "clicks": {
+      "l1_vs_original_max_abs_diff": 0.0,
+      "baselines_vs_original_max_abs_diff": 0.0
+    },
+    "unsubscribes": {
+      "l1_vs_original_max_abs_diff": 0.0,
+      "baselines_vs_original_max_abs_diff": 0.0
+    }
+  },
+  "frozen_and_development_unchanged": true,
+  "losses": {
+    "l1": {
+      "objective": "regression_l1"
+    },
+    "l2": {
+      "objective": "regression"
+    },
+    "huber": {
+      "objective": "huber"
+    },
+    "tweedie": {
+      "objective": "tweedie"
+    },
+    "quantile_0.6": {
+      "objective": "quantile",
+      "alpha": 0.6
+    },
+    "quantile_0.7": {
+      "objective": "quantile",
+      "alpha": 0.7
+    },
+    "quantile_0.8": {
+      "objective": "quantile",
+      "alpha": 0.8
+    }
+  },
+  "huber_note": "LightGBM default transition parameter (alpha = 0.9 pp)",
+  "tweedie_note": "LightGBM default variance power 1.5, log link",
+  "environment": {
+    "python": "3.14.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "platform": "Windows-11-10.0.26300-SP0"
+  }
+}

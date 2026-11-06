@@ -1,0 +1,122 @@
+{
+  "reproduction_of_results_development": {
+    "clicks": {
+      "original_12_vs_results_development_max_abs_diff": 0.0
+    },
+    "unsubscribes": {
+      "original_12_vs_results_development_max_abs_diff": 0.0
+    }
+  },
+  "frozen_and_development_unchanged": true,
+  "feature_sets": {
+    "history_only": [
+      "history_n",
+      "history_days_since_last",
+      "history_mean_sent",
+      "history_clicks_mean",
+      "history_clicks_weighted",
+      "history_clicks_last",
+      "history_clicks_last5_mean",
+      "history_clicks_last5_median",
+      "history_unsubscribes_mean",
+      "history_unsubscribes_weighted",
+      "history_unsubscribes_last",
+      "history_unsubscribes_last5_mean",
+      "history_unsubscribes_last5_median"
+    ],
+    "history_plus_original_12": [
+      "message_content_size",
+      "message_images_count",
+      "message_embedded_images_count",
+      "message_embedded_images_size",
+      "message_embedded_files_count",
+      "message_embedded_files_size",
+      "message_links_count",
+      "message_personalization_tags_count",
+      "message_personalization_tags_in_sender_email_count",
+      "message_personalization_tags_in_subject_count",
+      "message_personalization_tags_in_html_body_count",
+      "message_personalization_tags_in_text_body_count",
+      "history_n",
+      "history_days_since_last",
+      "history_mean_sent",
+      "history_clicks_mean",
+      "history_clicks_weighted",
+      "history_clicks_last",
+      "history_clicks_last5_mean",
+      "history_clicks_last5_median",
+      "history_unsubscribes_mean",
+      "history_unsubscribes_weighted",
+      "history_unsubscribes_last",
+      "history_unsubscribes_last5_mean",
+      "history_unsubscribes_last5_median"
+    ],
+    "history_plus_transformed": [
+      "log1p_message_content_size",
+      "log1p_message_images_count",
+      "log1p_message_embedded_images_count",
+      "log1p_message_embedded_images_size",
+      "log1p_message_embedded_files_count",
+      "log1p_message_embedded_files_size",
+      "log1p_message_links_count",
+      "log1p_message_personalization_tags_count",
+      "log1p_message_personalization_tags_in_sender_email_count",
+      "log1p_message_personalization_tags_in_subject_count",
+      "log1p_message_personalization_tags_in_html_body_count",
+      "log1p_message_personalization_tags_in_text_body_count",
+      "links_per_kib",
+      "images_per_kib",
+      "embedded_images_per_kib",
+      "personalization_share_sender_email",
+      "personalization_share_subject",
+      "personalization_share_html_body",
+      "personalization_share_text_body",
+      "has_images",
+      "has_embedded_images",
+      "has_embedded_files",
+      "has_links",
+      "has_personalization",
+      "has_subject_personalization",
+      "history_n",
+      "history_days_since_last",
+      "history_mean_sent",
+      "history_clicks_mean",
+      "history_clicks_weighted",
+      "history_clicks_last",
+      "history_clicks_last5_mean",
+      "history_clicks_last5_median",
+      "history_unsubscribes_mean",
+      "history_unsubscribes_weighted",
+      "history_unsubscribes_last",
+      "history_unsubscribes_last5_mean",
+      "history_unsubscribes_last5_median"
+    ]
+  },
+  "dictionary_check": {
+    "raw_columns": 119,
+    "non_numeric_columns": [
+      "client_tag_name",
+      "campaign_test_part",
+      "campaign_test_type",
+      "campaign_sent_time",
+      "domain_in_links_min_creation_time",
+      "domain_in_links_max_creation_time",
+      "domain_in_links_avg_creation_time",
+      "domain_in_links_most_used_creation_time"
+    ],
+    "columns_mentioning_subject_body_text_html_content": [
+      "message_content_size",
+      "message_personalization_tags_in_subject_count",
+      "message_personalization_tags_in_html_body_count",
+      "message_personalization_tags_in_text_body_count"
+    ],
+    "zenodo_record": "https://zenodo.org/records/17985618, version 1.0.0, consulted 2026-11-05. Data summary: \"No personal data, no message bodies, no recipient-level records\"; overview: \"without exposing message content\". The only free-text field, client_tag_name, is a manual client label.",
+    "protocol_exclusions": "05_plan/PROTOCOLO_EXPERIMENTAL_V1.md excludes blocked links, moderation, manual tags, domains, identifiers as numbers and current-campaign responses."
+  },
+  "environment": {
+    "python": "3.14.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "platform": "Windows-11-10.0.26300-SP0"
+  }
+}
