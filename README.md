@@ -1,4 +1,4 @@
-# Email Campaign Prediction — Soberón
+# Email Campaign Prediction
 
 Companion to the submitted manuscript **Development of a Machine Learning-Based Method for Predicting Key Metrics in Digital Marketing Campaigns**. Authors: Bernabe B. Soberón-Quintana, Efraín A. Muro-Nuñez and Victor A. Tuesta-Monteza, Universidad Señor de Sipán, Peru.
 
