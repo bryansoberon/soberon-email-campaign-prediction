@@ -4,6 +4,8 @@ Companion to the submitted manuscript **Development of a Machine Learning-Based 
 
 This repository contains the complete local application and scientific method for pre-send unique-click and unsubscribe rate prediction. It supports inspection of the archived experiment and an independent repetition from the original data. It preserves the 140 files of the original Supplementary File S1 archive byte for byte under `study/`. The Supplementary File S1 submitted with the manuscript differs only in `article_figures/`, which contains the exact manuscript figures also provided here in `reference_figures/`, in a README section describing those figures, and in its updated `MANIFEST_SHA256.json`. The reviewer tools add numerical checks, the manuscript figures and isolated execution directories.
 
+**En español:** la [guía para la tesis](docs/GUIA_TESIS_ES.md) relaciona cada resultado de la tesis con su evidencia y explica cómo comprobarlo.
+
 Start with the [application manual](docs/APPLICATION_USER_GUIDE.md), [method and experimental protocol in English](docs/METHOD_AND_PROTOCOL_EN.md), or the reviewer commands below. The application has an English interface at `http://127.0.0.1:8765/?lang=en`. Original frozen source files, identifiers, API routes and protocol evidence remain unchanged; some historical comments and terminal messages are in Spanish.
 
 ## Submitted supplementary file
